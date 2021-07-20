@@ -1,8 +1,8 @@
 # credits goes ro catbot
 from telethon.tl.types import MessageEntityMentionName
 
-from userbot.Config import Config
-from userbot.utils import delete_REBEL
+from REBELBOT.Config import Config
+from REBELBOT.utils import delete_REBEL
 
 
 async def reply_id(event):
