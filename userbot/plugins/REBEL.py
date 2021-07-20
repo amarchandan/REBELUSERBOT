@@ -67,7 +67,7 @@ async def amireallyalive(alive):
         REBEL_caption += f"**★ 𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :** `1.15.0`\n"
         REBEL_caption += f"**★ 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧 :**`{REBELversion}`\n"
         REBEL_caption += f"**★ 𝗨𝗣𝗧𝗜𝗠𝗘 :** `{uptime}\n`"
-        REBEL_caption += f"**     [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))`"
+        REBEL_caption += f"**     [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))\n" 
         await alive.client.send_file(
             alive.chat_id, REBEL_IMG, caption=REBEL_caption, reply_to=reply_to_id
         )
@@ -81,5 +81,5 @@ async def amireallyalive(alive):
             f"**★ 𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :** `1.15.0`\n"
             f"**★ 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧 :** `{REBELversion}`\n"
             f"**★ 𝗨𝗣𝗧𝗜𝗠𝗘 :** `{uptime}\n`"
-            f"**★   [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))`"
+            f"**★   [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))\n", 
         )
