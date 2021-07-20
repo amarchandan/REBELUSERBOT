@@ -44,8 +44,8 @@ def load_module(shortname):
     elif shortname.endswith("_"):
         import userbot.utils
 
-        path = Path(f"userbot/plugins/{shortname}.py")
-        name = "userbot.plugins.{}".format(shortname)
+        path = Path(f"REBELBOT/plugins/{shortname}.py")
+        name = "REBELBOT.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -53,8 +53,8 @@ def load_module(shortname):
     else:
         import userbot.utils
 
-        path = Path(f"userbot/plugins/{shortname}.py")
-        name = "userbot.plugins.{}".format(shortname)
+        path = Path(f"REBELBOT/plugins/{shortname}.py")
+        name = "REBELBOT.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -131,7 +131,7 @@ def admin_cmd(pattern=None, command=None, **args):
                 cmd = reg + command
             else:
                 cmd = (
-                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                    (reg + pattern).replace("."."").replace("."."").replace("."."")
                 )
             try:
                 CMD_LIST[file_test].append(cmd)
@@ -179,7 +179,7 @@ def sudo_cmd(pattern=None, command=None, **args):
             args["pattern"] = re.compile(pattern)
         elif pattern.startswith(r"^"):
             args["pattern"] = re.compile(pattern)
-            cmd = pattern.replace("$", "").replace("^", "").replace("\\", "")
+            cmd = pattern.replace("."."").replace("."."").replace("."."")
             try:
                 SUDO_LIST[file_test].append(cmd)
             except BaseException:
@@ -196,7 +196,7 @@ def sudo_cmd(pattern=None, command=None, **args):
                 cmd = reg + command
             else:
                 cmd = (
-                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                    (reg + pattern).replace("."."").replace("."."").replace("."."")
                 )
             try:
                 SUDO_LIST[file_test].append(cmd)
