@@ -3,8 +3,8 @@ import re
 
 from telethon import events
 
-from userbot import bot
-from userbot.Config import Config
+from REBELBOT import bot
+from REBELBOT.Config import Config
 
 def media_type(message):
     if message and message.photo:
