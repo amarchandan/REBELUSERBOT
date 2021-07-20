@@ -11,7 +11,7 @@ from userbot import bot as REBELBOT
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
-REBEL_logo = "./REBEL725/REBELBOT_logo.jpg"
+REBEL_logo = "./REBEL75/REBELBOT_logo.jpg"
 h1m4n5hu0p = REBELBOT.uid
 REBEL = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
@@ -24,7 +24,7 @@ async def send(event):
     thumb = REBEL_logo
     input_str = event.pattern_match.group(1)
     omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {REBEL}\n\n⚡ **[LEGENDARY AF REBELBOT](t.me/REBELBOT_SUPPORT)** ⚡"
-    the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
+    the_plugin_file = "./REBELBOT/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
             event.chat_id,
@@ -53,7 +53,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
                 await event.get_reply_message(),
-                "./userbot/plugins/"  # pylint:disable=E0602
+                "./REBELBOT/plugins/"  # pylint:disable=E0602
             )
             if "(" not in downloaded_file_name:
                 path1 = Path(downloaded_file_name)
@@ -86,7 +86,7 @@ async def uninstall(h1m4n5hu0p):
     if h1m4n5hu0p.fwd_from:
         return
     shortname = h1m4n5hu0p.pattern_match["shortname"]
-    dir_path =f"./userbot/plugins/{shortname}.py"
+    dir_path =f"./REBELBOT/plugins/{shortname}.py"
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
