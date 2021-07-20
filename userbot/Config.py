@@ -104,7 +104,7 @@ if ENV:
         # number of colums of buttons to be displayed in .help command
         NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", 3))
         # emoji to be displayed  in help .help
-        EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "⚜️")
+        EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "💙")
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
         COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
@@ -148,7 +148,7 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API",None)
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/REBEL725/REBELBOT"
+            "UPSTREAM_REPO", "https://github.com/REBEL75/REBELSBOT"
         )
         STRING_SESSION = os.environ.get("STRING_SESSION", None)
         BOT_MODE = os.environ.get("BOT_MODE", "ON")
