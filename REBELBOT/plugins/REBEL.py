@@ -15,7 +15,7 @@ async def reply_id(event):
 
 DEFAULTUSER = ALIVE_NAME or "REBEL User"
 REBEL_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "𝕃𝕖𝕘𝕖𝕟𝕕𝕒𝕣𝕪_𝔸𝔽_𝕄𝕒𝕗𝕚𝕒𝔹𝕠𝕥"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "LEGENDARY_AF_REBELBOT"
 
 USERID = bot.uid
 
@@ -53,8 +53,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="rebel$"))
-@bot.on(sudo_cmd(pattern="rebel$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="rebel."))
+@bot.on(sudo_cmd(pattern="rebel.", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
