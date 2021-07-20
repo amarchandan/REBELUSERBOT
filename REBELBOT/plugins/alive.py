@@ -39,20 +39,20 @@ file3 = "https://telegra.ph/file/a3090425421917fd339ee.mp4"
 pm_caption = "  __**🔥🔥ℝ𝔼𝔹𝔼𝕃𝔹𝕆𝕋 𝕀𝕊 𝔸𝕃𝕀𝕍𝔼🔥🔥**__\n\n"
 
 pm_caption += (
-    f"                 👑𝕄𝔸𝕊𝕋𝔼ℝ👑\n**  『😈[{DEFAULTUSER}](tg://user?id={REBEL})😈』**\n\n"
+    f"🔷ROYAL OWNER🔷\n**『🔹[{DEFAULTUSER}](tg://user?id={REBEL})🔹』**\n"
 )
 
-pm_caption += "🛡️𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡🛡️ : `1.15.0` \n\n"
+pm_caption += "🛡️𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡🛡️ : `1.15.0`\n"
 
-pm_caption += f"😈𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧😈 : `{REBELversion}`\n\n"
+pm_caption += f"😈𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧😈 : `{REBELversion}`\n"
 
-pm_caption += f"😱𝗦𝗨𝗗𝗢😱            : `{sudou}`\n\n"
+pm_caption += f"😱𝗦𝗨𝗗𝗢😱            : `{sudou}`\n"
 
-pm_caption += "😇𝗖𝗛𝗔𝗡𝗡𝗘𝗟😇️   : [ᴊᴏɪɴ](https://t.me/REBELBOT_SUPPORT)\n\n"
+pm_caption += "😇𝗖𝗛𝗔𝗡𝗡𝗘𝗟😇️   : [ᴊᴏɪɴ](https://t.me/REBELBOT_SUPPORT)\n"
 
-pm_caption += "😎𝗖𝗥𝗘𝗔𝗧𝗢𝗥😎    : [𝗥𝗘𝗕𝗘𝗟](https://t.me/REBEL_IS_OP)\n\n"
+pm_caption += "😎𝗖𝗥𝗘𝗔𝗧𝗢𝗥😎    : [𝗥𝗘𝗕𝗘𝗟](https://t.me/REBEL_IS_OP)\n"
 
-pm_caption += "🤩𝗦𝗨𝗣𝗣𝗢𝗥𝗧𝗘𝗥🤩    :[ⓃⒾⓈⒽⓊ](https://t.me/Ap_Ne_mujhe_yaad_kiya_awwww)\n\n"
+pm_caption += "🤩𝗦𝗨𝗣𝗣𝗢𝗥𝗧𝗘𝗥🤩    :[ⓃⒾⓈⒽⓊ](https://t.me/Ap_Ne_mujhe_yaad_kiya_awwww)\n"
 
 pm_caption += "      [🔥𝗥𝗘𝗣𝗢🔥](https://github.com/REBEL725/REBELBOT) 🔹 [📜𝗟𝗶𝗰𝗲𝗻𝘀𝗲📜](https://github.com/REBEL725/REBELBOT/blob/main/LICENSE)"
 
