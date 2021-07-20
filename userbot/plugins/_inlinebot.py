@@ -55,13 +55,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️ ᏴᎪᏟᏦ {REBEL_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"◀️ ᏴᎪᏟᏦ {REBEL_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
                f"•{REBEL_emoji} ❌ {REBEL_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{REBEL_emoji} ΝᎬХͲ ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{REBEL_emoji} ΝᎬХͲ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -80,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**[{DEFAULTUSER}](tg://user?id={REBEL})📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\npage:** 1/{veriler[0]}",
+                text=f"**Running REBELBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -95,7 +95,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@REBELBOT_SUPPORT",
-                text="""[{DEFAULTUSER}](tg://user?id={REBEL})📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\npage:** 1/{veriler[0]}""",
+                text="""**Hey! This is [REBELBOT.](https://t.me/REBELBOT_SUPPORT) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/REBELBOT_SUPPORT"),
@@ -105,7 +105,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/REBEL75/REBELSBOT"),
+                            "✨ REPO ✨", "https://github.com/REBEL725/REBELBOT"),
                         custom.Button.url
                     (
                             "🔰 TUTORIAL 🔰", ""
@@ -120,14 +120,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na . © REBELBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"[{DEFAULTUSER}](tg://user?id={REBEL})📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\npage:** 1/{veriler[0]}",
+            f"**Legenday AF** [REBELBOT](https://t.me/REBELBOT_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -136,10 +136,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
-              "‼️REBELBOT Menu Provider Is now Closed‼️\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**", 5, link_preview=False
+              "👑REBELBOT Menu Provider Is now Closed👑\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**", 5, link_preview=False
             )
         else:
-            REBEL_alert = "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na. © REBELBOT ™"
+            REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™"
             await event.answer(REBEL_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -148,7 +148,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na. © REBELBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
                 cache_time=0,
                 alert=True,
             )
@@ -168,7 +168,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline("⬅️ ᏴᎪᏟᏦ", data=f"page({page})")])
+        buttons.append([custom.Button.inline("◀️ ᏴᎪᏟᏦ", data=f"page({page})")])
         await event.edit(
             f"**📗 File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
@@ -181,7 +181,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na. © REBELBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
                 cache_time=0,
                 alert=True,
             )
@@ -218,7 +218,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.edit(
             result,
             buttons=[
-                custom.Button.inline("⬅️ ᏴᎪᏟᏦ", data=f"Information[{page}]({cmd})")
+                custom.Button.inline("◀️ ᏴᎪᏟᏦ", data=f"Information[{page}]({cmd})")
             ],
             link_preview=False,
         )
