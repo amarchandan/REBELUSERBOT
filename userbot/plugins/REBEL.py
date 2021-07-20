@@ -63,11 +63,11 @@ async def amireallyalive(alive):
     if REBEL_IMG:
         REBEL_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         REBEL_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
-        REBEL_caption += f"__**𝗕𝗢𝗧 𝗦𝗧𝗔𝗧𝗨𝗦**__\n\n"
-        REBEL_caption += f"**★ 𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :** `1.15.0`\n"
-        REBEL_caption += f"**★ 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧 :**`{REBELversion}`\n"
-        REBEL_caption += f"**★ 𝗨𝗣𝗧𝗜𝗠𝗘 :** `{uptime}\n`"
-        REBEL_caption += f"**     [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))\n" 
+        REBEL_caption += f"__**BOT STATUS**__\n\n"
+        REBEL_caption += f"**★ TELETHON VERSION :** `1.15.0`\n"
+        REBEL_caption += f"**★ REBELBOT :**`{REBELversion}`\n"
+        REBEL_caption += f"**★ UPTIME :** `{uptime}\n`"
+        REBEL_caption += f"**★ OWNER :** {mention}\n"
         await alive.client.send_file(
             alive.chat_id, REBEL_IMG, caption=REBEL_caption, reply_to=reply_to_id
         )
@@ -77,9 +77,9 @@ async def amireallyalive(alive):
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
-            f"__**𝗕𝗢𝗧 𝗦𝗧𝗔𝗧𝗨𝗦**__\n\n"
-            f"**★ 𝗧𝗘𝗟𝗘𝗧𝗛𝗢𝗡 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :** `1.15.0`\n"
-            f"**★ 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧 :** `{REBELversion}`\n"
-            f"**★ 𝗨𝗣𝗧𝗜𝗠𝗘 :** `{uptime}\n`"
-            f"**★   [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))\n", 
+            f"__**BOT STATUS**__\n\n"
+            f"**★ TELETHON VERSION :** `1.15.0`\n"
+            f"**★ REBELBOT :** `{REBELversion}`\n"
+            f"**★ UPTIME :** `{uptime}\n`"
+            f"**★ OWNER :** {mention}\n",
         )
