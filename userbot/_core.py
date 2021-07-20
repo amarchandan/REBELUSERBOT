@@ -11,7 +11,7 @@ from userbot import bot as REBELBOT
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
-REBEL_logo = "./REBEL725/REBELBOT_logo.jpg"
+REBEL_logo = "./REBEL75/REBELBOT_logo.jpg"
 h1m4n5hu0p = REBELBOT.uid
 REBEL = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
