@@ -136,7 +136,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
-              "👑REBELBOT Menu Provider Is now Closed👑\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**", 5, link_preview=False
+              "REBELBOT ⚔️ Menu Provider Is now Closed ⚔️\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**", 5, link_preview=False
             )
         else:
             REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™"
@@ -158,7 +158,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "⚡ " + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "🔹" + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
