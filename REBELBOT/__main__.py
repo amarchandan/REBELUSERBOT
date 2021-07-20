@@ -5,9 +5,9 @@ from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 from telethon import TelegramClient
 from var import Var
-from userbot.Config import Config
-from userbot.utils import load_module
-from userbot import LOAD_PLUG, LOGS, REBELversion
+from REBELBOT.Config import Config
+from REBELBOT.utils import load_module
+from REBELBOT import LOAD_PLUG, LOGS, REBELversion
 from pathlib import Path
 import asyncio
 import telethon.utils
@@ -42,7 +42,7 @@ else:
 
 
 import glob
-path = 'userbot/plugins/*.py'
+path = 'REBELBOT/plugins/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
