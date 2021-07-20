@@ -120,7 +120,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                . © REBELBOT ™",
+                "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na . © REBELBOT ™",
                 cache_time=0,
                 alert=True,
             )
@@ -139,7 +139,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
               "‼️REBELBOT Menu Provider Is now Closed‼️\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**", 5, link_preview=False
             )
         else:
-            REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™"
+            REBEL_alert = "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na. © REBELBOT ™"
             await event.answer(REBEL_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -148,7 +148,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
+                "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na. © REBELBOT ™",
                 cache_time=0,
                 alert=True,
             )
@@ -181,7 +181,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
+                "Kya ha bhnchode kya dekh raha ha ja k khud ka bot bana le na. © REBELBOT ™",
                 cache_time=0,
                 alert=True,
             )
