@@ -36,7 +36,6 @@ REBEL_emoji = Config.EMOJI_IN_HELP
 def button(page, modules):
     Row = REBEL_row
     Column = 3
-TLINK = "https://telegra.ph/file/f16f79ce4055b0fe0511d.jpg"
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
     pairs = list(map(list, zip(modules[::2], modules[1::2])))
     if len(modules) % 2 == 1:
