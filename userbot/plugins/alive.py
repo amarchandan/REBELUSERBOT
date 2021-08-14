@@ -48,7 +48,8 @@ pm_caption += "😎𝗖𝗥𝗘𝗔𝗧𝗢𝗥😎    : [𝗥𝗘𝗕𝗘𝗟](
 
 pm_caption += "🤩𝗦𝗨𝗣𝗣𝗢𝗥𝗧𝗘𝗥🤩    :[ⓃⒾⓈⒽⓊ](https://t.me/nishuop5)\n"
 
-pm_caption += "      [𝑹𝑶𝒀𝑨𝑳 𝑶𝑾𝑵𝑬𝑹][[{DEFAULTUSER}](tg://user?id={REBEL})] "
+pm_caption += "       [𝑹𝑶𝒀𝑨𝑳 𝑶𝑾𝑵𝑬𝑹]([{DEFAULTUSER}](tg://user?id={REBEL}))\n"
+
 pm_caption += "      [🔥𝗥𝗘𝗣𝗢🔥](https://github.com/REBEL75/REBELSBOT) 🔹 [📜𝗟𝗶𝗰𝗲𝗻𝘀𝗲📜](https://github.com/REBEL75/REBELSBOT/blob/main/LICENSE)\n"
 
 
