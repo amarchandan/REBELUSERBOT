@@ -32,7 +32,7 @@ REBEL = bot.uid
 
 edit_time = 10
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/9cf4ea6de5a3b3bb44dd8.jpg'
+file1 = "https://telegra.ph/file/9cf4ea6de5a3b3bb44dd8.jpg"
 """ =======================CONSTANTS====================== """
 pm_caption = "  __**🔥🔥ℝ𝔼𝔹𝔼𝕃𝔹𝕆𝕋 𝕀𝕊 𝔸𝕃𝕀𝕍𝔼🔥🔥**__\n"
 
