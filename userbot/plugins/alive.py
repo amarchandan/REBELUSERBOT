@@ -32,9 +32,7 @@ REBEL = bot.uid
 
 edit_time = 10
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/528425227d8763cedee29.mp4"
-file2 = "https://telegra.ph/file/6700325671af519dd3fd8.mp4"
-file3 = "https://telegra.ph/file/a3090425421917fd339ee.mp4"
+file1 = "https://telegra.ph/file/9cf4ea6de5a3b3bb44dd8.jpg'
 """ =======================CONSTANTS====================== """
 pm_caption = "  __**🔥🔥ℝ𝔼𝔹𝔼𝕃𝔹𝕆𝕋 𝕀𝕊 𝔸𝕃𝕀𝕍𝔼🔥🔥**__\n"
 
@@ -52,7 +50,7 @@ pm_caption += "🤩𝗦𝗨𝗣𝗣𝗢𝗥𝗧𝗘𝗥🤩    :[ⓃⒾⓈⒽⓊ
 
 pm_caption += "      [🔥𝗥𝗘𝗣𝗢🔥](https://github.com/REBEL75/REBELSBOT) 🔹 [📜𝗟𝗶𝗰𝗲𝗻𝘀𝗲📜](https://github.com/REBEL75/REBELSBOT/blob/main/LICENSE)\n"
 
-pm_caption += "      [ROYAL OWNER](buttonurl://[{DEFAULTUSER}](tg://user?id={REBEL}))"
+pm_caption += "      [𝑹𝑶𝒀𝑨𝑳 𝑶𝑾𝑵𝑬𝑹][[{DEFAULTUSER}](tg://user?id={REBEL})]
 
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
