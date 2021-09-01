@@ -5,8 +5,8 @@ from userbot import CMD_HELP
 from REBELBOT.utils import *
 
 
-@bot.on(admin_cmd(pattern="plinfo(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="plinfo(?: |$)(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="help(?: |$)(.*)", outgoing=True))
+@bot.on(sudo_cmd(pattern="help(?: |$)(.*)", allow_sudo=True))
 async def REBELBOTt(event):
     if event.fwd_from:
         return
