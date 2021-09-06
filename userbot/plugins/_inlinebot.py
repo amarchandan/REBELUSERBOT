@@ -30,7 +30,6 @@ from userbot.Config import Config
 
 REBEL_row = Config.BUTTONS_IN_HELP
 REBEL_emoji = Config.EMOJI_IN_HELP
-help_pic = Config.HELP_PIC or "https://telegra.ph/file/04394aec58ec3f6cb0e62.mp4"
 # thats how a lazy guy imports
 # REBELBOT
 
