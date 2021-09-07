@@ -88,7 +88,7 @@ async def info(event):
             await reply.delete()
     else:
         string = "<b>Please specify which plugin do you want help for !!\
-            \nNumber of plugins : </b><code>{count}</code>\
+            \nNumber of plugins[✨](https://telegra.ph/file/21d804a4bc34e1e4689f6.jpg) : </b><code>{count}</code>\
             \n<b>Usage:</b> <code>.help plugin name</code>\n\n"
         REBELcount = 0
         for i in sorted(SUDO_LIST):
