@@ -15,6 +15,8 @@
 #    This Inline Helper Code is solely owned by @SupRemE_AnanD
 #    You Should Not Copy This Code Without Proper Permission.
 
+# Help Pic feature added by 𝐌𝐀𝐅𝐈𝐀 𝐎𝐖𝐍𝐄𝐑 = @H1M4N5HU0P
+
 from math import ceil
 from re import compile
 import asyncio
@@ -28,6 +30,7 @@ from userbot.cmdhelp import *
 from REBELBOT.utils import *
 from userbot.Config import Config
 
+REBEL_help_pic = Config.HELP_PIC
 REBEL_row = Config.BUTTONS_IN_HELP
 REBEL_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
@@ -36,6 +39,7 @@ REBEL_emoji = Config.EMOJI_IN_HELP
 def button(page, modules):
     Row = REBEL_row
     Column = 3
+
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
     pairs = list(map(list, zip(modules[::2], modules[1::2])))
     if len(modules) % 2 == 1:
@@ -54,13 +58,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏴᎪᏟᏦ {REBEL_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"◀️ ᏰᎯᏣᏦ {REBEL_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
                f"•{REBEL_emoji} ❌ {REBEL_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{REBEL_emoji} ΝᎬХͲ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{REBEL_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
@@ -79,9 +83,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running REBELBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running REBELBOT**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
-                link_preview=False,
+                link_preview=True,
             )
         elif query.startswith("http"):
             part = query.split(" ")
@@ -94,24 +98,24 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@REBELBOT_SUPPORT",
-                text="""**Hey! This is [REBELBOT.](https://t.me/REBELBOT_SUPPORT) \nYou can know more about me from the links given below 👇**""",
+                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [REBELBOT.](https://t.me/REBELBOT_SUPPORT)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/REBELBOT_SUPPORT"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/REBELBOT_SUPPORT"
+                            "⚡ GROUP ⚡", "https://t.me/REBEL_BOT_CHATING"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/REBEL725/REBELBOT"),
+                            "🔰 REPO 🔰", "https://github.com/REBEL75/REBELSBOT"),
                         custom.Button.url
                     (
                             "🔰 TUTORIAL 🔰", ""
                     )
                     ],
                 ],
-                link_preview=False,
+                link_preview=True,
             )
         await event.answer([result] if result else None)
 
@@ -126,16 +130,16 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [REBELBOT](https://t.me/REBELBOT_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF REBELBOT[⚡🔥]({REBEL_help_pic})[.](https://t.me/REBELBOT_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
-            link_preview=False,
+            link_preview=True,
         )
         
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
-              "REBELBOT ⚔️ Menu Provider Is now Closed ⚔️\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**", 5, link_preview=False
+              f"⚜️REBELBOT Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**[⚡🔥]({REBEL_help_pic})", 5, link_preview=True
             )
         else:
             REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™"
@@ -157,7 +161,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "🔹" + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "💙" + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
@@ -167,7 +171,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline("◀️ ᏴᎪᏟᏦ", data=f"page({page})")])
+        buttons.append([custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"page({page})")])
         await event.edit(
             f"**📗 File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
@@ -217,7 +221,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.edit(
             result,
             buttons=[
-                custom.Button.inline("◀️ ᏴᎪᏟᏦ", data=f"Information[{page}]({cmd})")
+                custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"Information[{page}]({cmd})")
             ],
             link_preview=False,
         )
