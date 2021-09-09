@@ -7,12 +7,6 @@ from telethon import functions
 from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from REBELBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-HELP_PIC = (
-    Var.HELP_PIC
-    if Var.HELP_PIC
-    else "https://telegra.ph/file/5c670625bb70dadb02e96.jpg"
-)
-
 @bot.on(admin_cmd(pattern="help ?(.*)", outgoing=True))
 async def yardim(event):
     if event.fwd_from:
