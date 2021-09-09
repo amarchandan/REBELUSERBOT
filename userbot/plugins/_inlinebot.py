@@ -28,6 +28,7 @@ from userbot.cmdhelp import *
 from REBELBOT.utils import *
 from userbot.Config import Config
 
+REBEL_HELP_PIC = config.HELP_PIC else "https://telegra.ph/file/ad1efcc9e155c21d10857.jpg"
 REBEL_row = Config.BUTTONS_IN_HELP
 REBEL_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
@@ -77,9 +78,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid and query == "@REBELBOT_SUPPORT":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
-            result = await builder.article(
-                f"Hey! Only use .help please",
-                text=f"**Running REBELBOT**\n\n__Number of plugins [✌️](https://telegra.ph/file/21d804a4bc34e1e4689f6.jpg) installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+            result = await builder.photo(
+                file=f"REBEL_HELP_PIC",
+                text=f"**Running REBELBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -92,9 +93,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 link_preview=True,
             )
         elif event.text=='':
-            result = builder.article(
-                "@REBELBOT_SUPPORT",
+            result = builder.photo(
+                file=REBEL_HELP_PIC,
                 text="""**Hey! This is [REBELBOT.](https://t.me/REBELBOT_SUPPORT) \nYou can know more about me from the links given below 👇**""",
+                link_preview=False,
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/REBELBOT_SUPPORT"),
@@ -126,6 +128,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
+            f"REBEL_HELP_PIC",
             f"**Legenday AF** [REBELBOT](https://t.me/REBELBOT_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
