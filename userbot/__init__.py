@@ -8,7 +8,7 @@ from userbot.Config import Config
 from var import Var
 
 StartTime = time.time()
-REBELversion = "2.0"
+REBELversion = "2.3"
 botversion = "0.1"
 
 os.system("pip install --upgrade pip")
