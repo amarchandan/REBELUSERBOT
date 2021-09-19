@@ -51,7 +51,7 @@ pm_caption += f"┣•➳➠ `𝙲𝚑𝚊𝚗𝚗𝚎𝚕:` [𝙹𝙾𝙸𝙽](
 pm_caption += f"┣•➳➠ `𝙲𝚛𝚎𝚊𝚝𝚘𝚛:` [𝚁𝙴𝙱𝙴𝙻](https://t.me/REBEL_IS_OP)\n"
 pm_caption += f"┣•➳➠ `𝚂𝚞𝚙𝚙𝚘𝚛𝚝𝚎𝚛:` [𝙽𝙸𝚂𝙷𝚄](https://t.me/nishuop)\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━\n"
-pm_caption += " [🔥𝐑𝐄𝐏𝐎🔥](https://github.com/REBEL75/REBELSBOT) 🔹 [📜𝐋𝐢𝐜𝐞𝐧𝐬𝐞📜](https://github.com/REBEL75/REBELSBOT/blob/main/LICENSE)"
+pm_caption += " [🔥𝐑𝐄𝐏𝐎🔥](https://github.com/REBEL75/REBELBOT) 🔹 [📜𝐋𝐢𝐜𝐞𝐧𝐬𝐞📜](https://github.com/REBEL75/REBELBOT/blob/main/LICENSE)"
 
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
