@@ -1,7 +1,4 @@
-# Thanks to Sipak bro and Aryan.. 
-# animation Idea by @NOOB_GUY_OP (Sipakisking) && @Hell boy_pikachu
-# Made by @ROMANTIC_KILLER...and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
+# Thanks to @D3_krish
 # Porting in REBELUSERBOT by REBEL75
 
 import asyncio
@@ -15,12 +12,6 @@ from userbot.cmdhelp import CmdHelp
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBELBOT"
 
-# Thanks to Sipak bro and Raganork.. 
-# animation Idea by @NOOB_GUY_OP (Sipakisking)
-# Made by @ROMANTIC_KILLER...and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
-# alive.py for ÂÝŮ$HópBØȚ
-
 ludosudo = Config.SUDO_USERS
 
 if ludosudo:
@@ -30,7 +21,7 @@ else:
 
 REBEL = bot.uid
 
-edit_time = 16
+edit_time = 4
 """ =======================CONSTANTS====================== """
 file1 = "https://telegra.ph/file/76dd5605de7340568a904.mp4"
 file2 = "https://telegra.ph/file/b765c0daec4a63c286e34.mp4"
@@ -39,12 +30,12 @@ file4 = "https://telegra.ph/file/b765c0daec4a63c286e34.mp4"
 """ =======================CONSTANTS====================== """
 pm_caption = "  __**🔥🔥𝐑𝐄𝐁𝐄𝐋 𝐁𝐎𝐓  𝐈𝐒 𝐀𝐋𝐈𝐕𝐄🔥🔥**__\n\n"
 
-pm_caption += f"**━━━━━━━━━━━━━━━━━━━**\n\n"
+pm_caption += f"**━━━━━━━━━━━━━━━━━━━━━━━━━━━**\n\n"
 pm_caption += (
     f"                🔰ᗰᗩՏTᗴᖇ🔰\n      **『😈[{DEFAULTUSER}](tg://user?id={REBEL})😈』**\n\n"
 )
 pm_caption += f"┏━━━━━━━━━━━━━━━━━━\n"
-pm_caption += f"┣•➳➠ `𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙼:` `{version.__version__}` \n"
+pm_caption += f"┣•➳➠ `𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `𝚅𝚎𝚛𝚜𝚒𝚘𝚗:` `{REBELversion}`\n"
 pm_caption += f"┣•➳➠ `𝚂𝚞𝚍𝚘:` `{sudou}`\n"
 pm_caption += f"┣•➳➠ `𝙲𝚑𝚊𝚗𝚗𝚎𝚕:` [𝙹𝙾𝙸𝙽](https://t.me/REBELBOT_SUPPORT)\n"
@@ -73,35 +64,6 @@ async def amireallyalive(alive):
     await asyncio.sleep(edit_time)
     ok4 = await borg.edit_message(alive.chat_id, ok3, file=file3)
     
-    await asyncio.sleep(edit_time)
-    ok5 = await borg.edit_message(alive.chat_id, ok4, file=file2)
-    
-    await asyncio.sleep(edit_time)
-    ok6 = await borg.edit_message(alive.chat_id, ok5, file=file4)
-    
-    await asyncio.sleep(edit_time)
-    ok7 = await borg.edit_message(alive.chat_id, ok6, file=file1)
-    
-    await asyncio.sleep(edit_time)
-    ok8 = await borg.edit_message(alive.chat_id, ok7, file=file2) 
-
-    await asyncio.sleep(edit_time)
-    ok9 = await borg.edit_message(alive.chat_id, ok8, file=file3)
-
-    await asyncio.sleep(edit_time)
-    ok10 = await borg.edit_message(alive.chat_id, ok9, file=file1)
-    
-    await asyncio.sleep(edit_time)
-    ok11 = await borg.edit_message(alive.chat_id, ok10, file=file3)
-    
-    await asyncio.sleep(edit_time)
-    ok12 = await borg.edit_message(alive.chat_id, ok11, file=file2)
-    
-    await asyncio.sleep(edit_time)
-    ok13 = await borg.edit_message(alive.chat_id, ok12, file=file4)
-    
-    await asyncio.sleep(edit_time)
-    ok14 = await borg.edit_message(alive.chat_id, on, file=file1)
 
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, caption=pm_caption)
