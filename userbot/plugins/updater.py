@@ -19,9 +19,9 @@ BOT_IS_UP_TO_DATE = "**The 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧** is up-to-date sur.
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
-    "updating your 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧 ..."
+    "𝚄𝙿𝙳𝙰𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 ..."
 )
-NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "`updating your 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧...`"
+NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "` 𝚄𝙿𝙳𝙰𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃...`"
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
