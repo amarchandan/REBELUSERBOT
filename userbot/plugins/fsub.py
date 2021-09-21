@@ -80,7 +80,7 @@ async def forcesub(event):
 @bot.on(sudo_cmd(pattern="fsub ?(.*)", allow_sudo=True))
 async def _(event):
     if event.is_private:
-        await eor(event, "This is meant to be used in groups only!!")
+        await edit_or_reply(event, "This is meant to be used in groups only!!")
         return
     hunter = event.pattern_match.group(1)
     if not hunter:
@@ -95,11 +95,11 @@ async def _(event):
     try:
         hunter = (await bot.get_entity(ch)).id
     except BaseException:
-        return await eor(event, "⚠️ **Error !** \n\nChannel ID invalid. Please Recheck It !")
+        return await edit_or_reply(event, "⚠️ **Error !** \n\nChannel ID invalid. Please Recheck It !")
     if not str(hunter).startswith("-100"):
         hunter = int("-100" + str(hunter))
     add_fsub(event.chat_id, hunter)
-    await eor(event, "Implementing **Force Subscribe** In This Channel !!")
+    await edit_or_reply(event, "Implementing **Force Subscribe** In This Channel !!")
 
 
 @bot.on(admin_cmd(pattern="rmfsub"))
@@ -108,7 +108,7 @@ async def removef(event):
     hel_ = rem_fsub(event.chat_id)
     if not hel_:
         return await eod(event, "I don't think force sub was activated here.")
-    await eor(e, "Deactivated **Force Subscribe** In This Channel !!")
+    await edit_or_reply(e, "Deactivated **Force Subscribe** In This Channel !!")
 
 
 @bot.on(admin_cmd(pattern="chfsub"))
@@ -118,7 +118,7 @@ async def getfsub(event):
     if not all_chat:
         return await eod(event, "Force Subscribe Is Disabled Here..")
     channel = await bot.get_entity(int(all))
-    await eor(event, f"**ForceSub Enabled ** :\n- {channel.title} `({all})`")
+    await edit_or_reply(event, f"**ForceSub Enabled ** :\n- {channel.title} `({all})`")
 
 
 @bot.on(admin_cmd(pattern="lsfsub$"))
