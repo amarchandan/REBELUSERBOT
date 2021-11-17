@@ -1,6 +1,6 @@
 from sqlalchemy import Column, LargeBinary, Numeric, UnicodeText
 
-from mafiabot.plugins.sql_helper import BASE, SESSION
+from REBELBOT.plugins.sql_helper import BASE, SESSION
 
 
 class Snips(BASE):
